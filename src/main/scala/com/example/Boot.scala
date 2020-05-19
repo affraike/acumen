@@ -24,12 +24,12 @@ object Boot extends App with MyRoutes with WebRoutes {
 
   implicit val timeout = Timeout(5.seconds)
   // Check for assigned port (heroku support) or default to 8080
-  val port = Properties.envOrElse("PORT", "8080").toInt
+  val port = Properties.envOrElse("PORT", "3000").toInt
 
   // Interface MUST be 0.0.0.0 for heroku
   Http().bindAndHandle(routes, "0.0.0.0", port)
 
-  println(s"Server online at http://localhost:8080/")
+  println(s"Server online at http://localhost:3000/")
 
   Await.result(system.whenTerminated, Duration.Inf)
 }

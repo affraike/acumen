@@ -15,11 +15,11 @@ trait MyRoutes {
 
   lazy val log = Logging(system, classOf[MyRoutes])
 
-  lazy val myRoute: Route =
-    path("hello") {
+  lazy val myRoute: Route = 
+    path("server") {
       get {
         complete {
-          "world!"
+          "You're communicating with the server !"
         }
       }
     }
