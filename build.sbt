@@ -45,7 +45,7 @@ lazy val buildFrontEnd: TaskKey[Unit] = taskKey[Unit]("Execute the npm build com
 buildFrontEnd := {
   val s: TaskStreams = streams.value
   s.log.info("Building front-end")
-  val shell: Seq[String] = Seq("bash", "-c")
+  val shell: Seq[String] = Seq("cmd", "/c")
   val npmInstall: Seq[String] = shell :+ "npm install"
   val npmBuild: Seq[String] = shell :+ "npm run build"
 
