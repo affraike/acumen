@@ -14,7 +14,7 @@ export class LaunchingServerComponent implements OnInit {
   ngOnInit() {
   }
 
-  getStatusServer(btn){
+  getStatusServer(){
     this.launch.areYouHere()
   }
 }
