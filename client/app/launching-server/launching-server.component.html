@@ -1,9 +1,18 @@
-<label class="switch">
-  <input type="checkbox" id="launchToggle" >
-  <span class="slider round"></span>
-</label>
-
-<div>
-  <button id = "checkServer" (click)='getStatusServer()'>Get Status</button>
-  <textarea id="statusServer">{{statusServer}}</textarea>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-1">
+      <button id = "checkServer" (click)='getStatusServer()'>Get Status</button>
+    </div>
+    <div class="col-lg-1">
+      <label class="switch">
+        <input type="checkbox" id="launchToggle" >
+        <span class="slider round"></span>
+      </label>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-2">
+      <textarea id="statusServer">{{statusServer}}</textarea>
+    </div>
+  </div>
 </div>
