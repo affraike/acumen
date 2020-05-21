@@ -16,7 +16,7 @@ Follow these steps to get started:
 
 1. Git-clone this repository.
 
-   `git clone git://github.com/jdschmitt/spray-angular-heroku.git my-project`
+   `https://github.com/affraike/acumen`
 
 2. Change directory into your clone:
 
@@ -52,5 +52,4 @@ Note: The order you add the buildpacks is important. NodeJS buildpack must be ad
 * If you update the name in [build.sbt](build.sbt) then you must also update the file name of the target in [Procfile](Procfile) to match
 * [build.sbt](build.sbt) adds a dependency to the Compile task which is responsible for building the Angular application.
 * Basic Specs2 tests included. Execute with `sbt test`
-* For Spray with Angular 2 front-end, check the [spray-angular2](https://github.com/jdschmitt/spray-angular-heroku/tree/spray-angular2) branch.
-* For Spray with Angular 4 front-end, check the [spray-angular4](https://github.com/jdschmitt/spray-angular-heroku/tree/spray-angular4) branch.
+* Currently working with Angular 9 for the frontend
