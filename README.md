@@ -13,13 +13,14 @@ Follow these steps to get started:
 3. Start the application:
 
    `sbt reload`
+
    `sbt fastOptJS`
 
 4. Open the Web UI:
 
    Just open the html file with your browser
 
-## Heroku
+## Heroku (Not implemented yet)
 
 1. `heroku create my-project`
 
