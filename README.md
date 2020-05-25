@@ -1,16 +1,4 @@
-## akka-angular-heroku
-
-Seed project for akka http back-end with angular front-end (currently Angular 5) and configured for heroku
-
-This project is a starting point to build a full-stack web application using Scala / Akka Http as the backend and Angular 5 as the front-end. It is configured in such a way as to allow for deployment to Heroku in a single dyno by following the steps below.
-
-Before running the project:
-
-1. Make sure you upgraded Node.js to the latest version.
-
-2. Install ng module
-   
-   `npm install -g ng-cli`
+# Setup
 
 Follow these steps to get started:
 
@@ -24,13 +12,12 @@ Follow these steps to get started:
 
 3. Start the application:
 
-   `sbt compile run`
+   `sbt reload`
+   `sbt fastOptJS`
 
-4. Browse to [http://localhost:3000](http://localhost:3000/)
+4. Open the Web UI:
 
-5. Start hacking on `src/main/scala/com/example/MyService.scala` for new APIs
-
-6. Start hacking in `client` folder for Angular app
+   Just open the html file with your browser
 
 ## Heroku
 
